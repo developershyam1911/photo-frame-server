@@ -6,8 +6,8 @@ import {
 } from "../utils/cloudinary.js";
 import mongoose from "mongoose";
 import convertToLSlug from "../utils/genrateSlug.js";
-import { Category } from "../model/categoryModel.js";
 import { ApiError } from "../utils/ApiError.js";
+import { Category } from "../Model/categoryModel.js";
 
 const createCategory = async (req, res, next) => {
   const { name, status } = req.body;

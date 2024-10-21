@@ -1,7 +1,7 @@
 import createHttpError from "http-errors";
 import mongoose from "mongoose";
-import { Color } from "../model/colorModel.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
+import { Color } from "../model/colorModel.js";
 
 const createColor = async (req, res, next) => {
   const { name, status } = req.body;
